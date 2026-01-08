@@ -41,7 +41,26 @@ switch (option) {
       alert("Invalid Score")
       break;
     }
+    
+    let ans = prompt("Put in your grade");
 
+    if (isNaN(ans)) {
+      console.log("You did not put in a number");
+    } else if (ans > 100) {
+      console.log("Your score is not within the range");
+    } else if (ans > 69) {
+      console.log("You got an A");
+    } else if (ans > 59) {
+      console.log("You got a B");
+    } else if (ans > 49) {
+      console.log("You got a C");
+    } else if (ans > 39) {
+      console.log("You got a D");
+    } else if (ans > 31) {
+      console.log("You got an E");
+    } else if (ans < 29) {
+      console.log("You got an F");
+    }
 
     ppl.push( name, age , clas, score );
     console.log("student:", ppl);
