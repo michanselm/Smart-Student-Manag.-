@@ -4,12 +4,18 @@ let schoolName = prompt("Enter your school name:");
 if (!schoolName) {
   schoolName = "Our School";
 }
-function showMenu() {}
-const option = Number(
-  prompt(
-    "Please choose an operation: \n1.Register Student \n 2. View All Students\n 3. Search Student \n 4. Exit"
-  )
-);
+
+function showMenu() {
+  return Number(
+    prompt(
+      "Select an option:\n" +
+        "1. Register Student\n" +
+        "2. View All Students\n" +
+        "3. Search Student\n" +
+        "4. Exit"
+    )
+  );
+}
  let ppl = [];
 switch (option) {
   case 1: 
@@ -64,6 +70,6 @@ switch (option) {
      
   function showMenu() {}
   case 2:
-    
+
     
 }
